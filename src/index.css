@@ -2,7 +2,15 @@
 
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: corporate --default;
+  themes: all;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 @layer base {
@@ -34,7 +42,7 @@
     font-size: var(--text-xs);
   }
 
-  /* a {
-    color: var(--color-blue-600);
-  } */
+  a {
+    font-size: var(--text-md);
+  }
 }
